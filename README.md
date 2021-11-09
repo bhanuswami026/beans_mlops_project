@@ -46,4 +46,18 @@ Continuous Delivery is the ability to get changes of all types—including new f
 #### PRINCIPLES OF CD:
 * Frequent Small deployments
 * Automation with a human touch
-* Always 
+* Always improving
+* Shared responsibility model
+
+#### TOOLS FOR CD:
+* Jenkins—can also be used for CD with its pipeline as code, Ansible, or Terraform plugins.
+* Azure Pipelines—has a release definition section that you can integrate with a build stage from CI.
+* Spinnaker—gaining popularity, and it’s the tool that Netflix uses to do releases in a CD way.
+* GitLab CI—lets you configure deployment and release pipelines with GitLab.
+* GoCD—the ThoughtWorks offering that applies the principles I’ve discussed in this post.
+
+
+### IMPLEMENTING CI/CD PIPELINES WITH KUBERNETES AND SERVERLESS ARCHITECTURES:
+Many teams operating CI/CD pipelines in cloud environments also use containers such as Docker and orchestration systems such as Kubernetes. Containers allow for packaging and shipping applications in standard, portable ways. Containers make it easy to scale up or tear down environments that have variable workloads.
+
+Serverless computing architectures present another avenue for deploying and scaling applications. In a serverless environment, the infrastructure is fully managed by the cloud service provider and the application consumes resources as needed based on its configuration. On AWS for example, serverless applications run as Lambda functions and deployments can be integrated into a Jenkins CI/CD pipeline with a plug-in. 
