@@ -21,3 +21,29 @@ Angular Leaf Spot	    432
 Bean Rust	            436
 Total:	              1,296
 Data can be downloaded from here: https://github.com/AI-Lab-Makerere/ibean/
+
+### CI DEFINED:
+Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. By integrating regularly, you can detect errors quickly, and locate them more easily.
+
+The integration happens after a “git push,” usually to a master branch—more on this later. Then, in a dedicated server, an automated process builds the application and runs a set of tests to confirm that the newest code integrates with what’s currently in the master branch.
+
+CI works in three simple stages: push, test, and fix. But despite this simplicity, CI might become challenging if only a few members of the team practice it. Consequently, CI also requires a change in culture and support from management.
+
+#### TOOLS FOR CI:
+CI is mainly a cultural shift, but some tools could help you to get the job done quickly.
+* Jenkins—a free, open-source, Java-based tool that gives you a lot of flexibility.
+* Azure Pipelines—a Microsoft product free for up to five users and open-source projects.
+* Cloud Build—the managed service offering from Google Cloud Platform.
+* AWS cloud build.
+* Travis CI—a popular tool for GitHub open-source projects that offers a hosted or self-hosted solution.
+* GitLab CI—a free tool from GitLab that can also integrate with other tools via the API.
+* CircleCI—a tool that’s popular for GitHub projects and has a hosted and self-hosted solution. You can start for free.
+* CodeShip—a self-hosted-only solution. You can start with the free version, but it’s a paid tool.
+
+### CD DEFINED:
+Continuous Delivery is the ability to get changes of all types—including new features, configuration changes, bug fixes and experiments—into production, or into the hands of users, safely and quickly in a sustainable way. We achieve all this by ensuring our code is always in a deployable state, even in the face of teams of thousands of developers making changes on a daily basis.
+
+#### PRINCIPLES OF CD:
+* Frequent Small deployments
+* Automation with a human touch
+* Always 
