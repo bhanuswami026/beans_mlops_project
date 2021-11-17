@@ -12,11 +12,15 @@ st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title("Bean Image Classifier")
 st.text("Provide URL of bean Image for image classification")
 
+# Cache the model, because we donot want to load model for every inference.
+# so we cache it.
 @st.cache(allow_output_mutation=True)
 def load_model():
   model = tf.keras.models.load_model('/app/models/')
   return model
 
+# spinner is just to inform that the we are waiting for command to be exectued
+# a command that is taking time. 
 with st.spinner('Loading Model Into Memory....'):
   model = load_model()
 
