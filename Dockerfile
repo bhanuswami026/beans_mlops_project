@@ -14,4 +14,6 @@ RUN ls -la $APP_HOME/
 RUN pip install -r requirements.txt
 
 # Run the streamlit on container startup
+# enableCORS is set false so that any image can be displayed. Otherwise, GCP
+# will block some websites.
 CMD [ "streamlit", "run","--server.enableCORS","false","imgwebapp.py" ]
